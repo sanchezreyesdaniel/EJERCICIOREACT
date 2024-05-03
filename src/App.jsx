@@ -1,25 +1,53 @@
 
 import './App.css'
+import { AboutMe } from './componentes/aboutme'
+import { Avatar } from './componentes/componente-header/avatar'
+import { Menu } from './componentes/componente-header/menu'
+import { Contact } from './componentes/contact'
+import { Footer } from './componentes/footer'
+import { Home, Redes } from './componentes/home'
+import { Proyects } from './componentes/proyects'
+
 
 function App() {
   
 
   return (
-    <div className='p-5 flex flex-col items-center'>
-      <div>
-      <h1>Tailwind</h1>
-      <img width={100} src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/320px-Tailwind_CSS_Logo.svg.png" alt="" />
+    <>
+    <div>
+      <div className='flex'>
+        <Avatar></Avatar>
+        <Menu></Menu>
+      </div>
+      <div id='home'>
+        <Home></Home>
+        <Redes></Redes>
+      </div>
+      <div id='aboutme'>
+        <AboutMe></AboutMe>
       </div>
       <div>
-      <h1>React</h1>
-      <img width={200} src="https://www.logo.wine/a/logo/React_(web_framework)/React_(web_framework)-Logo.wine.svg" alt="" />
+        <Proyects></Proyects>
+      </div>
+      <div
+  style={{
+    backgroundImage: 'linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(src/assets/common-bg.svg)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    
+    padding: '1.5rem 8rem', // Agrega el padding al contenedor principal
+  }}
+>
+        <Contact></Contact>
       </div>
       <div>
-        <h1>Vite</h1>
-        <img width={100} src="https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png" alt="" />
+        <Footer></Footer>
       </div>
-      
+        
     </div>
+    </>
+    
+    
   )
 }
 
