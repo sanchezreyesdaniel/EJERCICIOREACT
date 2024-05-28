@@ -23,13 +23,13 @@ function App() {
         <Home></Home>
         <Redes></Redes>
       </div>
-      <div id='aboutme'>
+      <div id='aboutme' className='bg-gray-100'>
         <AboutMe></AboutMe>
       </div>
-      <div>
+      <div id='projects'>
         <Proyects></Proyects>
       </div>
-      <div
+      <div id='contact'
   style={{
     backgroundImage: 'linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(src/assets/common-bg.svg)',
     backgroundSize: 'cover',
